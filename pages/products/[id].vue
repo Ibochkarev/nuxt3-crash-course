@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Head>
+      <Title>Nuxt 3 |  </Title>
+    </Head>
     <ProductDetails :product="product" />
   </div>
 </template>
