@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>Products index page</h1>
+    <h1 class="mb-3">Products index page</h1>
     <div class="grid grid-cols-4 gap-5">
       <div v-for="p in products" :key="p.id">
-        <NuxtLink :to="`/products/${p.id}`">{{p.title}}</NuxtLink>
+        <ProductCard :product="p"/>
       </div>
     </div>
   </div>
